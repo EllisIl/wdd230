@@ -1,9 +1,5 @@
-@media screen and (min-width: 38em){
-    header {
-        background-color: black;
-        color: white;
-    }
-    main {
-        grid-template-columns: 1fr 1fr;
+@media screen and (min-width: 400px){
+    nav a {
+        flex-direction: row;
     }
 }

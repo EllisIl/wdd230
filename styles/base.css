@@ -1,0 +1,89 @@
+/* https://coolors.co/bfbdc1-6d6a75-37323e-deb841-de9e36 */
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    font-family: 'Rubik', sans-serif;
+}
+header {
+    text-align: center;
+    padding: 0;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    margin-bottom: 0;
+}
+header span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+header img {
+    width: 50px;
+    height: auto;
+    margin-right: 10%;
+}
+
+/* mobile style menu */
+#menu {
+    margin-top: -1em;
+}
+nav ul {
+    display: block;
+    justify-content: center;
+    padding-left: 0;
+}
+nav a {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    background-color: var(--accent-color);
+    flex-direction: column;
+    color: var(--text-color);
+}
+nav a:hover {
+    background-color: var(--secondary-accent-color);
+}
+#current {
+    font-weight: bolder;
+    background-color: var(--secondary-accent-color);
+}
+
+
+main h1 {
+    text-align: center;
+    color: var(--secondary-color);
+}
+.card {
+    display: block;
+    margin: 5%;
+    border-style: solid;
+    border-radius: 5px;
+}
+.card h2{
+    margin: auto;
+    padding: 5px;
+    background-color: var(--secondary-accent-color);
+}
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+footer {
+    display: flex;
+    background-color: var(--accent-color);
+    margin: 0;
+    padding: 0;
+    margin-bottom: -20px;
+}
+
+/* color variables */
+:root {
+    --primary-color: #EDF6F9;
+    --secondary-color: #83C5BE;
+    --text-color: #776300;
+    --accent-color: #FFDDD2;
+    --secondary-accent-color: #E29578;
+}
