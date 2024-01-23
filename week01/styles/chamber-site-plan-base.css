@@ -1,0 +1,28 @@
+body {
+    background-color: burlywood;
+    font-family: "Montserrat", sans-serif;
+}
+
+.primary {
+    color: var(--primary-color);
+}
+.secondary {
+   color: var(--secondary-color); 
+}
+.text {
+    color: var(--text-color);
+}
+.accent {
+    color: var(--accent-color);
+}
+.secondary-accent {
+    color: var(--secondary-accent-color);
+}
+
+:root {
+    --primary-color: #934B00;
+    --secondary-color: #690500;
+    --text-color: #210F04;
+    --accent-color: #452103;
+    --secondary-accent-color: #BB6B00;
+}
