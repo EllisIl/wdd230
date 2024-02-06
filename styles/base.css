@@ -98,10 +98,11 @@ nav a:hover {
 
 /* Dark Mode */
 .switch {
-	position: absolute;
-	top: 1.5rem;
-	right: 4rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 4rem;
 }
+
 .switch label {
     width: 55px;
     height: 23px;
@@ -111,13 +112,15 @@ nav a:hover {
     left: 0;
     border-radius: 50px;
     cursor: pointer;
-    line-height: 23px;
-    font-size: 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .switch input[type="checkbox"] {
     visibility: hidden;
 }
+
 .switch label:after {
     content: '';
     width: 21px;
@@ -129,12 +132,27 @@ nav a:hover {
     transition: 100ms;
     background-color: white;
 }
+
 .switch .look:checked + label:after {
     left: 32px;
 }
+
 .switch .look:checked + label {
-    background-color: lightsteelblue;
+    background-color: var(--accent-color);
 }
+
+.switch label {
+    font-size: 1rem; /* Adjust font size as needed */
+    line-height: 1.5rem; /* Match height of the switch */
+    text-align: center;
+    color: black; /* Adjust color as needed */
+}
+
+.switch .emoji {
+    margin-left: 1rem; /* Adjust spacing between switch and emoji */
+    font-size: 1rem;
+}
+
 .dark-mode {
     /* Adjust styles for dark mode */
     --primary-color: var(--dark-primary-color);
@@ -181,8 +199,8 @@ footer {
     --text-color: #1D6C72;
     --accent-color: #FFDDD2;
     --secondary-accent-color: #E29578;
-    --background-color: #eeeeee
-    --dark-primary-color: #37323E; /* Dark mode variant */
+    --background-color: #eee;
+    --dark-primary-color: #37323e; /* Dark mode variant */
     --dark-secondary-color: #6D6A75; /* Dark mode variant */
     --dark-text-color: #eae8eb; /* Dark mode variant */
     --dark-accent-color: #DE9E36; /* Dark mode variant */
