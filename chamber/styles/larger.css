@@ -1,0 +1,15 @@
+@media screen and (min-width: 600px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 40px; /* Adjust margin to make space for the navigation menu */
+    }
+
+    nav {
+        padding: 0; /* Remove padding to prevent extra space */
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
