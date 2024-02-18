@@ -195,6 +195,38 @@ footer {
     margin-bottom: -20px;
 }
 
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero picture,
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+
+.overlay h1 {
+    margin: 0;
+}
+
+footer iframe {
+    display: block;
+    margin: 20px auto;
+}
+
 /* color variables */
 :root {
     --primary-color: #D8EAF3;

@@ -23,3 +23,22 @@ function toggleColor() {
 }
 
 modeButton.addEventListener("click", toggleColor);
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Page visit counter
+    let visitCount = localStorage.getItem('visitCount');
+    if (!visitCount) {
+        visitCount = 0;
+    }
+    visitCount++;
+    localStorage.setItem('visitCount', visitCount);
+    document.getElementById('visitCount').textContent = visitCount;
+
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Set last modified date in footer
+    const lastModified = document.lastModified;
+    document.getElementById('lastModified').textContent = 'Last modified: ' + lastModified;
+});
