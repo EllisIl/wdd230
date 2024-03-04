@@ -32,7 +32,7 @@
   <body>
     <header>
       <span>
-        <img src="images/me.jpg" alt="Elijah Foard" />
+        <img src="images/me.webp" alt="Elijah Foard" loading="lazy"/>
         Elijah Foard
       </span>
       <div class="switch">
@@ -54,17 +54,17 @@
       <div class="hero">
         <picture>
           <source
-            srcset="path_to_mobile_image.webp"
+            srcset="images/small-temple.webp"
             media="(max-width: 400px)"
           />
           <source
-            srcset="path_to_desktop_image.webp"
+            srcset="images/large-temple.webp"
             media="(min-width: 401px)"
           />
-          <img src="fallback_image.jpg" alt="Favorite Latter-day Temple" />
+          <img src="fallback_image.jpg" alt="Favorite Latter-day Temple" loading="lazy" />
         </picture>
         <div class="overlay">
-          <h1>Temple Name</h1>
+          <h1>Washington D.C. Temple</h1>
         </div>
       </div>
       <div class="card-container">
@@ -97,12 +97,13 @@
       <div id="year"></div>
       <div id="lastModified"></div>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..."
-        width="600"
-        height="450"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24837.509957928312!2d-77.49815954999997!3d38.90823249999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b641120c929a91%3A0xd388f9b2247f67f3!2sSouth%20Riding%2C%20VA%2020152!5e0!3m2!1sen!2sus!4v1709589939444!5m2!1sen!2sus"
+        width="300"
+        height="200"
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </footer>
     <script src="scripts/index.js"></script>
