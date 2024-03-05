@@ -1,0 +1,146 @@
+[
+  {
+    "families": [
+      {
+        "family_name": "Smith",
+        "move_in_date": "2023-05-15",
+        "number_of_people": 4,
+        "visited_by_bishopric": true,
+        "family_members": [
+          {
+            "name": "John",
+            "gender": "male",
+            "birthdate": "1990-02-10"
+          },
+          {
+            "name": "Jane",
+            "gender": "female",
+            "birthdate": "1992-08-25"
+          },
+          {
+            "name": "Tom",
+            "gender": "male",
+            "birthdate": "2015-04-03"
+          },
+          {
+            "name": "Sara",
+            "gender": "female",
+            "birthdate": "2018-10-20"
+          }
+        ]
+      },
+      {
+        "family_name": "Johnson",
+        "move_in_date": "2022-10-01",
+        "number_of_people": 3,
+        "visited_by_bishopric": true,
+        "family_members": [
+          {
+            "name": "Michael",
+            "gender": "male",
+            "birthdate": "1975-07-12"
+          },
+          {
+            "name": "Emily",
+            "gender": "female",
+            "birthdate": "1980-04-30"
+          },
+          {
+            "name": "David",
+            "gender": "male",
+            "birthdate": "2010-11-22"
+          }
+        ]
+      },
+      {
+        "family_name": "Williams",
+        "move_in_date": "2024-01-20",
+        "number_of_people": 5,
+        "visited_by_bishopric": false,
+        "family_members": [
+          {
+            "name": "Robert",
+            "gender": "male",
+            "birthdate": "1982-09-05"
+          },
+          {
+            "name": "Amy",
+            "gender": "female",
+            "birthdate": "1985-12-15"
+          },
+          {
+            "name": "Olivia",
+            "gender": "female",
+            "birthdate": "2010-02-28"
+          },
+          {
+            "name": "Daniel",
+            "gender": "male",
+            "birthdate": "2013-08-10"
+          },
+          {
+            "name": "Sophia",
+            "gender": "female",
+            "birthdate": "2018-05-18"
+          }
+        ]
+      },
+      {
+        "family_name": "Brown",
+        "move_in_date": "2023-07-05",
+        "number_of_people": 2,
+        "visited_by_bishopric": false,
+        "family_members": [
+          {
+            "name": "William",
+            "gender": "male",
+            "birthdate": "1988-03-20"
+          },
+          {
+            "name": "Emma",
+            "gender": "female",
+            "birthdate": "1990-11-28"
+          }
+        ]
+      },
+      {
+        "family_name": "Davis",
+        "move_in_date": "2024-02-15",
+        "number_of_people": 6,
+        "visited_by_bishopric": true,
+        "family_members": [
+          {
+            "name": "Christopher",
+            "gender": "male",
+            "birthdate": "1970-12-02"
+          },
+          {
+            "name": "Jessica",
+            "gender": "female",
+            "birthdate": "1975-08-18"
+          },
+          {
+            "name": "Noah",
+            "gender": "male",
+            "birthdate": "2000-05-10"
+          },
+          {
+            "name": "Ava",
+            "gender": "female",
+            "birthdate": "2005-10-15"
+          },
+          {
+            "name": "Ethan",
+            "gender": "male",
+            "birthdate": "2010-02-28"
+          },
+          {
+            "name": "Mia",
+            "gender": "female",
+            "birthdate": "2015-07-20"
+          }
+        ]
+      }
+    ]
+  }
+]

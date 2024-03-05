@@ -42,3 +42,35 @@ document.addEventListener('DOMContentLoaded', function () {
     const lastModified = document.lastModified;
     document.getElementById('lastModified').textContent = 'Last modified: ' + lastModified;
 });
+
+function validateForm() {
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirmPassword").value;
+    var email = document.getElementById("email").value;
+    var emailPattern = /[a-zA-Z0-9._%+-]+@byui\.edu$/;
+
+    if (password.length < 8 || !password.match(/^[a-zA-Z0-9]+$/)) {
+        alert("Password must be at least eight characters long and can only contain alphanumeric characters.");
+        document.getElementById("password").value = "";
+        document.getElementById("confirmPassword").value = "";
+        document.getElementById("password").focus();
+        return false;
+    }
+
+    if (password !== confirmPassword) {
+        alert("Passwords do not match. Please try again.");
+        document.getElementById("password").value = "";
+        document.getElementById("confirmPassword").value = "";
+        document.getElementById("password").focus();
+        return false;
+    }
+
+    if (!email.match(emailPattern)) {
+        alert("Please enter a valid email address from the byui.edu domain.");
+        document.getElementById("email").value = "";
+        document.getElementById("email").focus();
+        return false;
+    }
+
+    return true;
+}

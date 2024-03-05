@@ -14,4 +14,32 @@
         display: inline-block;
         margin: 0 auto;
     }
+    .join {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Two-column layout */
+        align-content: center;
+        gap: 20px;
+    }
+    .join ~ membership-benefits {
+        text-align: left;
+    }
+    .membership-benefits {
+        grid-column: 1 / 2;
+    }
+
+    .form-inputs {
+        grid-column: 2 / 3;
+    }
+
+    .membership-level {
+        margin-bottom: 20px;
+    }
+
+    .membership-level h3 {
+        margin-bottom: 10px;
+    }
+
+    .membership-level ul {
+        padding-left: 20px;
+    }
 }
