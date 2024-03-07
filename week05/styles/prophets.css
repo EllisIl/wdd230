@@ -1,0 +1,22 @@
+#cards {
+    background-color: #eee;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: -1vh -1vh 1vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+#cards * {
+  background-color: #acb6f0;
+  color: #222dc0;
+}
+
+section {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section img {
+    width: 100%;
+}

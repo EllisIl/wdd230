@@ -93,6 +93,8 @@ main {
     max-width: 400px;
     appearance: none;
 }
+
+.wfi:nth-child(:not(first))
 .wf1 input[type="radio"],
 .wf1 input[type="checkbox"] {
     margin-right: 6px;
