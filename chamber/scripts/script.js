@@ -1,3 +1,16 @@
+// transition effect for discover page
+// credit to Beyond Fireship
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) =>{
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show')
+        }
+    })
+});
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
 // JavaScript for displaying visit messages
 document.addEventListener('DOMContentLoaded', function() {
     let lastVisit = localStorage.getItem('lastVisit');

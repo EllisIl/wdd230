@@ -1,99 +1,86 @@
+
+
 :root {
-    --primary-color: #8C3D00; /* Darker shade of orange */
-    --secondary-color: #5D0000; /* Darker shade of red */
-    --text-color: #FFFFFF; /* White text for better contrast */
-    --secondary-text-color: #330000; /* Darker color for better contrast on lighter items */
-    --accent-color: #9C5D00; /* Darker shade of orange for accent */
-    --secondary-accent-color: #FF8500; /* Brighter shade of orange for secondary accent */
+  --primary-color: #3B413C; 
+  --background-color: #FFF;
+  --secondary-color: #9DB5B2; 
+  --text-color-on-light-on-light: #1D201E;
+  --text-color-on-dark: #fff;
+  --secondary-text-color: #330000; 
+  --accent-color: #DAF0EE; 
+  --secondary-accent-color: #94D1BE; 
 }
 
 body {
-    margin: 0;
-    padding: 0 auto;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--background-color);
+  
 }
 
 header {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    padding: 1em;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 3; /* Ensure header is above nav */
+  background-color: var(--primary-color);
+  color: var(--text-color-on-dark);
+  padding: 1em;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 3; /* Ensure header is above nav */
 }
 
 nav {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    text-align: center;
-    position: sticky;
-    width: 100%;
-    z-index: 2; /* Ensure nav is on top */
-    top: 3em; /* Place the navigation below the header */
+  background-color: var(--secondary-color);
+  color: var(--text-color-on-dark);
+  text-align: center;
+  position: sticky;
+  width: 100%;
+  z-index: 2; /* Ensure nav is on top */
 }
 
 nav a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 16px;
-    border-radius: 5px;
-    z-index: 3;
-    transition: background-color 0.3s ease; /* Create a transition for a more seamless user interaction */
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1vh;
+  z-index: 3;
+  transition: background-color 0.3s ease; /* Create a transition for a more seamless user interaction */
 }
-
-#hero {
-    width: 100%;
-    position: relative; /* Position relative to allow z-index to work */
-    margin-top: 40px; /* Adjust margin to make space for the navigation menu */
-}
-
 #hero img {
     width: 100%;
+    display: block;
 }
-
 nav a:hover {
     background-color: var(--accent-color); /* Darken the background on hover */
 }
-
 main {
     display: grid;
     gap: 20px;
-    margin-top: 40px; /* Adjust margin to make space for the hero image */
+    padding: 2vh;
 }
-
-
 .card {
     background-color: #f2f2f2;
     padding: 20px;
+    border: 2px solid var(--secondary-color);
 }
-
 .cta-section {
     background-color: var(--accent-color);
     padding: 20px;
     text-align: center;
-    color: white; /* Text color for better contrast */
+    color: var(--text-color-on-light); /* Text color for better contrast */
 }
-
 .cta-button {
     display: inline-block;
-    margin-top: 20px; /* Add space above the button */
-    padding: 12px 24px;
+    padding: 1vh 2vh;
     background-color: var(--secondary-accent-color);
-    color: white;
     text-decoration: none;
-    border: none;
     border-radius: 5px;
     color: var(--secondary-text-color);
     transition: background-color 0.3s ease;
 }
-
 .cta-button:hover {
-    background-color: #BB8000; /* Darken the button color on hover */
+    background-color: var(--secondary-color); /* Darken the button color on hover */
 }
-
-
 .main-content {
     width: 80%;
     margin: 0 auto;
@@ -104,111 +91,131 @@ main {
 }
 .main-content img {
     width: 80%;
-    height: auto;
-    box-shadow: -1vh 1vh 3px var(--secondary-accent-color);
+  height: auto;
+  box-shadow: -1vh 1vh 3px var(--secondary-accent-color);
 }
-
 .left-content {
-    grid-column: 1 / 2;
-    width: 100%;
-    background-color: var(--accent-color);
-    padding: 25px;
-    color: var(--text-color);
+  grid-column: 1 / 2;
+  width: 100%;
+  background-color: var(--accent-color);
+  padding: 25px;
+  color: var(--text-color-on-light);
+  border: 2px solid var(--secondary-color);
 }
 .stats {
-    background-color: var(--text-color);
+    background-color: var(--text-color-on-light);
     color: var(--primary-color);
     padding: 20px;
-    border-radius: 20px;
+    border: 2px solid var(--secondary-color);
     box-shadow: -1vh 1vh 3px var(--secondary-accent-color);
 }
-
 .right-content {
     grid-column: 2 / 3;
     width: 100%;
+    border: 2px solid var(--secondary-color);
 }
 .restaurant {
     padding: 10px;
 }
 .restaurant figure {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .restaurant figure figcaption {
-    position: absolute;
-    top: 100%; /* Position below the image */
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    color: white;
-    padding: 10px;
-    margin: 0;
-    opacity: 0; /* Initially invisible */
-    transition: opacity 0.3s ease; /* Fade-in effect */
+  position: absolute;
+  top: 100%; /* Position below the image */
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white;
+  padding: 10px;
+  margin: 0;
+  opacity: 0; /* Initially invisible */
+  transition: opacity 0.3s ease; /* Fade-in effect */
 }
 
 .restaurant figure:hover figcaption {
-    opacity: 1; /* Make the caption visible on hover */
+  opacity: 1; /* Make the caption visible on hover */
 }
 
 .restaurant figure:hover img {
-    cursor: pointer;
-    filter: grayscale(100%);
+  cursor: pointer;
+  filter: grayscale(100%);
 }
 
 .sidebar {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
 }
 
 .join {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    margin-top: 40px; /* Adjust margin to make space for the hero image */
-    padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2vh;
 }
-
 .join label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
-
+.join form {
+    background-color: var(--secondary-accent-color);
+    padding: 3vh;
+    border-radius: 15px;
+}
 .join input[type="text"],
 .join input[type="email"],
 .join input[type="tel"],
 .join select,
 .join textarea {
-    width: 50%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-
 .join input[type="submit"] {
-    background-color: var(--secondary-accent-color);
-    color: var(--text-color);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: var(--secondary-color);
+  color: var(--text-color-on-dark);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-
 .join input[type="submit"]:hover {
-    background-color: #BB8000; /* Darken the button color on hover */
+  background-color: var(--primary-color); /* Darken the button color on hover */
+}
+.join .membership-benefits {
+  background-color: var(--primary-color);
+  color: var(--text-color-on-dark);
+  padding: 3vh;
+  border-radius: 15px;
+}
+.join .field {
+    background-color: var(--accent-color);
+    padding: 1vh;
+    margin-bottom: 1vh;
+    border-radius: 1.5vh;
+}
+footer {
+  background-color: var(--secondary-color);
+  color: var(--text-color-on-light);
+  text-align: center;
+  padding: 1em 0;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 2s;
 }
 
-footer {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    text-align: center;
-    padding: 20px 0;
-    position: sticky;
-    bottom: 0;
-    width: 100%;
+.show {
+  opacity: 1;
+  filter: blur(0);
 }

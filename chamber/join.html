@@ -9,6 +9,9 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="favicon">
     <meta property="og:url" content="https://ellisil.github.io/wdd230">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 </head>
@@ -64,45 +67,61 @@
             </div>
         <form action="thankyou.html" method="get">
            
-
+            <h1>Join the Chamber!</h1>
 
             <!-- first name -->
-            <label for="fname">First Name:</label><br>
-            <input type="text" id="fname" required><br><br>
-        
+            <div class="field">
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" required><br><br>
+            </div>
+            
             <!-- last name  -->
-            <label for="lname">Last Name:</label><br>
-            <input type="text" id="lname" required><br><br>
-        
+            <div class="field">
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" required><br><br>
+            </div>
+            
             <!-- title or position -->
-            <label for="position">Position:</label>
-            <input type="text" id="position" pattern="[A-Za-z -]{7,}" title="Please enter at least seven characters consisting of alphabets, hyphens, and spaces only." required><br><br>
-        
+            <div class="field">
+                <label for="position">Position:</label>
+                <input type="text" id="position" pattern="[A-Za-z -]{7,}" title="Please enter at least seven characters consisting of alphabets, hyphens, and spaces only." required><br><br>
+            </div>
+            
             <!-- email address -->
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" required><br><br>
-        
+            <div class="field">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required><br><br>
+            </div>
+                
             <!-- phone number -->
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required><br><br>
-        
+            <div class="field">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required><br><br>
+            </div>
+            
             <!-- business/organization name -->
-            <label for="organization">Business/Organization Name:</label>
-            <input type="text" id="organization" required><br><br>
-        
+            <div class="field">
+                <label for="organization">Business/Organization Name:</label>
+                <input type="text" id="organization" required><br><br>
+            </div>
+
             <!-- membership level (Non-Profit, Bronze, Silver, Gold) -->
-            <label for="membership">Membership Level:</label>
-            <select id="membership" required>
-                <option value="">Select Membership Level</option>
-                <option value="Non-Profit">Non-Profit</option>
-                <option value="Bronze">Bronze</option>
-                <option value="Silver">Silver</option>
-                <option value="Gold">Gold</option>
-            </select><br><br>
+            <div class="field">
+                <label for="membership">Membership Level:</label>
+                <select id="membership" required>
+                    <option value="">Select Membership Level</option>
+                    <option value="Non-Profit">Non-Profit</option>
+                    <option value="Bronze">Bronze</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Gold">Gold</option>
+                </select><br><br>
+            </div>
         
             <!-- business description -->
-            <label for="description">Business Description:</label><br>
-            <textarea id="description" rows="4" cols="50" required></textarea><br><br>
+            <div class="field">
+                <label for="description">Business Description:</label><br>
+                <textarea id="description" rows="4" cols="50" required></textarea><br><br>
+            </div>
         
             <!-- timestamp -->
             <input type="hidden" id="timestamp" value="">
@@ -113,8 +132,8 @@
         
     </main>
     <footer>
-        <br><span>Elijah Foard | WDD 230 Project | Last Modified: <span id="lastModified"></span></span>
+        <span>Elijah Foard | WDD 230 Project | Last Modified: <span id="lastModified"></span></span>
     </footer>
-    <!-- <script src="scripts/script.js"></script> -->
+    <script src="scripts/script.js"></script>
 </body>
 </html>
