@@ -1,0 +1,98 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/chamber-site-plan.html",
+                    "title": "Layout"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "JS Pen"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/hamburger.html",
+                    "title": "Hamburger"
+                },
+                {
+                    "url": "week02/design.html",
+                    "title": "Design"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "Book of Mormon"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "Webp"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/EllisIl/pen/VwNLWQr",
+                    "title": "Pseudo-classes"
+                },
+                {
+                    "url": "images/selectors.webp",
+                    "title": "Selectors"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "Table"
+                },
+                {
+                    "url": "week04/form-start/Form-start/index.html",
+                    "title": "Form"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/EllisIl/pen/MWRKgxB",
+                    "title": "Pseudo-elements"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "Working with JSON data"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Prophets"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Weather"
+                }
+            ]
+        },
+        {
+            "week": "Week 6",
+            "links": [
+                {
+                    "url": "",
+                    "title": ""
+                }
+            ]
+        }
+    ]
+}

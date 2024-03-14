@@ -70,27 +70,22 @@
       <div class="card-container">
         <section class="card">
           <h2>Learning Activities</h2>
-          <ul>
-            <li>
-              Week 01: <a href="">Layout</a> | <a href="">Media Query</a> |
-              <a href="">JS Pen</a>
-            </li>
-            <li>
-              Week 02: <a href="week02/hamburger.html">Hamburger</a> |
-              <a href="week02/design.html">Design</a> |
-              <a href="week02/bom.html">BoM</a>
-            </li>
-            <li>Week 03: <a href="week03/images/landscape.webp">Webp</a></li>
-            <li>Week 04: <a href="https://codepen.io/EllisIl/pen/VwNLWQr">Pseudo-classes</a> | <a href="images/selectors.webp">Selectors</a> | <a href="week04/tablebuild.html">Table</a> | <a href="week04/form-start/Form-start/index.html">Form</a></li>
-            <li>Week 05: <a href="https://codepen.io/EllisIl/pen/MWRKgxB">Pseudo-elements</a> | <a href="week05/new-ward-members.json">Working with JSON data</a> | <a href="week05/prophets.html">Prophets</a> | <a href="week05/weather.html">Weather</a></li>
-            <li>Week 06:</li>
+          <ul id="links-container">
           </ul>
         </section>
-        <h2>Information</h2>
-        Information about weather, visits, etc.
-        <div id="pageVisitCounter">
-          Page Visits: <span id="visitCount">0</span>
-        </div>
+        <section class="card">
+          <h2>Information</h2>
+          <div>
+              <p>The current temperature in South Riding, Virginia is <span id="current-temp"></span></p>
+              <figure>
+                  <img src="" alt="" id="weather-icon">
+                  <figcaption></figcaption>
+              </figure>
+          </div>
+          <div id="pageVisitCounter">
+            Page Visits: <span id="visitCount">0</span>
+          </div>
+        </section>
       </div>
     </main>
     <footer>
@@ -107,5 +102,6 @@
       ></iframe>
     </footer>
     <script src="scripts/index.js"></script>
+    <script src="scripts/links.js"></script>
   </body>
 </html>

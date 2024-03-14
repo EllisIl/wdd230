@@ -1,0 +1,32 @@
+[   
+    {
+        "members": [
+            {
+                "name": "Peri Peri",
+                "address": "24995 Riding Plz, Suite 105, South Riding, VA 20152",
+                "phone": "(703) 456-1234",
+                "email": "info@periperioriginaldmv.com",
+                "url": "https://www.periperioriginaldmv.com/",
+                "image": "images/periperi-min.jpg",
+                "level": "Gold",
+                "hours": [
+                    "All Week: 11:00am - 9:00pm"
+                ]
+            },
+            {
+                "name": "Mex-Mart & Deli",
+                "address": "24630 S Point Dr, Suite 100, Chantilly, VA 20152",
+                "phone": "(703) 995-0302",
+                "email": "info@mexmartdeliSR.com",
+                "url": "https://www.yelp.com/biz/mex-mart-and-deli-chantilly",
+                "image": "images/mexmart.jpg",
+                "level": "Silver",
+                "hours": [
+                    "Mon-Fri: 8:00am - 10:00pm",
+                    "Sat: 8:00am - 9:00pm",
+                    "Sun: 9:00am - 8:00pm"
+                ]
+            }
+        ]
+    }
+]
