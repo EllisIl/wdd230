@@ -104,3 +104,4 @@ function displayResults(data) {
 }
 
 apiFetch();
+

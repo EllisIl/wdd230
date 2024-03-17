@@ -1,4 +1,4 @@
-[   
+
     {
         "members": [
             {
@@ -7,7 +7,7 @@
                 "phone": "(703) 456-1234",
                 "email": "info@periperioriginaldmv.com",
                 "url": "https://www.periperioriginaldmv.com/",
-                "image": "images/periperi-min.jpg",
+                "image": "images/periperi.jpg",
                 "level": "Gold",
                 "hours": [
                     "All Week: 11:00am - 9:00pm"
@@ -26,7 +26,43 @@
                     "Sat: 8:00am - 9:00pm",
                     "Sun: 9:00am - 8:00pm"
                 ]
+            },
+            {
+                "name": "Kabob Nook",
+                "address": "24651 Southpoint Dr, Chantilly, VA 20152",
+                "phone": "(703) 584-7575",
+                "email": "kabob.nook+customerservice@gmail.com",
+                "url": "https://maps.roadtrippers.com/us/south-riding-va/food-drink/kabob-nook",
+                "image": "images/kabobnook.jpg",
+                "level": "Silver",
+                "hours": [
+                    "All Week: 11:00am - 9:00pm"
+                ]
+            },
+            {
+                "name": "DiVine Wine Tours",
+                "address": "1800 Presidents St Hyatt Hotel, in Reston Town Center, Reston, VA 20190",
+                "phone": "(855) 384-6382",
+                "email": "info@divinewineva.com",
+                "url": "http://www.divinewineva.com/",
+                "image": "images/divine.jpg",
+                "level": "Gold",
+                "hours": [
+                    "Mon-Sat: 9:00am - 8:00pm"
+                ]
+            },
+            {
+                "name": "Lazy Dog Restaurant & Bar",
+                "address": "14333 Newbrook Dr, Chantilly, VA 20151",
+                "phone": "(571) 616-9093",
+                "email": "info@lazydogrestaurant.com",
+                "url": "https://www.yelp.com/biz/lazy-dog-restaurant-and-bar-chantilly-3",
+                "image": "images/lazydog.webp",
+                "level": "Gold",
+                "hours": [
+                    "Mon-Fri: 11:00am - 12:00am",
+                    "Sat-Sun: 10:00am - 12:00am"
+                ]
             }
         ]
     }
-]
