@@ -1,7 +1,7 @@
 :root {
   --primary-color: #3B413C; 
   --background-color: #FFF;
-  --secondary-color: #9DB5B2; 
+  --secondary-color: #92C2DD; 
   --text-color-on-light: #1D201E;
   --text-color-on-dark: #fff;
   --secondary-text-color: #330000; 
@@ -38,7 +38,7 @@ nav {
 
 nav a {
   display: block;
-  color: white;
+  color: var(--text-color-on-light);
   text-decoration: none;
   padding: 1vh;
   z-index: 3;
