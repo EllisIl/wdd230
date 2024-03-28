@@ -1,7 +1,7 @@
 :root {
   --primary-color: #3B413C; 
   --background-color: #FFF;
-  --secondary-color: #92C2DD; 
+  --secondary-color: #9DB5B2; 
   --text-color-on-light: #1D201E;
   --text-color-on-dark: #fff;
   --secondary-text-color: #330000; 
@@ -29,7 +29,7 @@ header {
 
 nav {
   background-color: var(--secondary-color);
-  color: var(--text-color-on-dark);
+  color: var(--text-color-on-light);
   text-align: center;
   position: sticky;
   width: 100%;
@@ -38,7 +38,7 @@ nav {
 
 nav a {
   display: block;
-  color: var(--text-color-on-light);
+  color: white;
   text-decoration: none;
   padding: 1vh;
   z-index: 3;
@@ -101,7 +101,7 @@ main {
   border: 2px solid var(--secondary-color);
 }
 .stats {
-    background-color: var(--accent-color);
+    background-color: var(--text-color-on-light);
     color: var(--primary-color);
     padding: 20px;
     border: 2px solid var(--secondary-color);
