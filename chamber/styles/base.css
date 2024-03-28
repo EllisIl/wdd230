@@ -176,7 +176,7 @@ main {
 }
 .join input[type="submit"] {
   background-color: var(--secondary-color);
-  color: var(--text-color-on-dark);
+  color: var(--text-color-on-light);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;

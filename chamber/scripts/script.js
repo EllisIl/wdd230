@@ -55,8 +55,8 @@ async function displayMembers() {
         let card = document.createElement('section');
         let name = document.createElement('h2');
         let image = document.createElement('img');
-        let address = document.createElement('h4');
-        let phone = document.createElement('h4');
+        let address = document.createElement('h3');
+        let phone = document.createElement('h3');
         let hours = document.createElement('div'); // Changed to div to hold multiple h4 elements
 
         name.textContent = member.name;
