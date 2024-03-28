@@ -40,6 +40,18 @@
                 ]
             },
             {
+                "name": "Fleetwood Farm Winery",
+                "address": "23075 Evergreen Mills Rd, Leesburg, VA 20175",
+                "phone": "(703) 722-2124",
+                "email": "events@fleetwoodfarmwinery.com",
+                "url": "https://fleetwoodfarmwinery.com/",
+                "image": "images/fleetwood.jpg",
+                "level": "Bronze",
+                "hours": [
+                    "All Week: 12:00pm - 6:00pm"
+                ]
+            },
+            {
                 "name": "DiVine Wine Tours",
                 "address": "1800 Presidents St Hyatt Hotel, in Reston Town Center, Reston, VA 20190",
                 "phone": "(855) 384-6382",
