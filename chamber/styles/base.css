@@ -38,7 +38,7 @@ nav {
 
 nav a {
   display: block;
-  color: white;
+  color: var(--text-color-on-light);
   text-decoration: none;
   padding: 1vh;
   z-index: 3;
