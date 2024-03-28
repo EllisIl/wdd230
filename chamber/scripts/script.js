@@ -53,15 +53,30 @@ async function displayMembers() {
 
     members.forEach((member) => {
         let card = document.createElement('section');
-        let name = document.createElement('h2');
+        let name = document.createElement('a');
         let image = document.createElement('img');
         let address = document.createElement('h3');
         let phone = document.createElement('h3');
-        let hours = document.createElement('div'); // Changed to div to hold multiple h4 elements
+        let hours = document.createElement('div');
+        let level = document.createElement('h4');
 
         name.textContent = member.name;
+        name.href = member.url;
+        name.target = "_blank"; 
         address.textContent = member.address;
         phone.textContent = member.phone;
+
+        let memberLevel = member.level;
+
+        let sign = '🥇';
+
+        if (memberLevel == "Silver") {
+            sign = '🥈';
+        } else if (memberLevel == "Bronze") {
+            sign = '🥉';
+        }
+
+        level.textContent = sign + member.level + " Level Member";
 
         member.hours.forEach((time) => {
             let timeElement = document.createElement('h5');
@@ -72,14 +87,15 @@ async function displayMembers() {
         image.setAttribute('src', member.image);
         image.setAttribute('alt', member.name);
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '340');
-        image.setAttribute('height', '440');
+        image.setAttribute('width', '100px');
+        image.setAttribute('height', '440px');
 
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(image);
         card.appendChild(hours);
+        card.appendChild(level);
 
         cards.appendChild(card);
     });
@@ -87,25 +103,19 @@ async function displayMembers() {
 
 displayMembers();
 
-displayMembers();
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
 
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
-
 gridbutton.addEventListener("click", () => {
-	// example using arrow function
 	display.classList.add("grid");
 	display.classList.remove("list");
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
-
-function showList() {
+listbutton.addEventListener("click", () => {
 	display.classList.add("list");
 	display.classList.remove("grid");
-}
+})
 
 
 // JavaScript for displaying visit messages

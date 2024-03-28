@@ -246,13 +246,17 @@ footer {
   background-color: var(--accent-color);
   width: 100%;
 }
+.grid div {
+  margin-bottom: 0;
+}
 .grid section {
   text-align: center;
   border: 1px solid var(--secondary-color);
   border-radius: 5px;
+  height: 100%;
   background-color: var(--primary-color);
   transition: transform 0.3s ease;
-  margin-bottom: 15px;
+  padding: 10px auto;
 }
 
 .grid img {
@@ -263,8 +267,7 @@ footer {
   transform: translateY(-5px); /* Add a slight lift on hover */
 }
 
-.grid h4 {
-  margin-bottom: 15px;
+.grid h3 {
   color: var(--primary-color);
 }
 
