@@ -1,10 +1,8 @@
-
-
 :root {
   --primary-color: #3B413C; 
   --background-color: #FFF;
   --secondary-color: #9DB5B2; 
-  --text-color-on-light-on-light: #1D201E;
+  --text-color-on-light: #1D201E;
   --text-color-on-dark: #fff;
   --secondary-text-color: #330000; 
   --accent-color: #DAF0EE; 
@@ -16,7 +14,7 @@ body {
   padding: 0;
   font-family: "Ubuntu", sans-serif;
   background-color: var(--background-color);
-  
+  width: 100%;
 }
 
 header {
@@ -223,47 +221,56 @@ footer {
 .directory {
   width: 80%;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
   justify-content: center; /* Center items horizontally */
   gap: 20px; /* Adjust the space between items */
 }
-.grid {
-  display: flex;
-  flex-direction: row;
+
+.directory .menu {
+  display: block;
 }
 
+#cards {
+  background-color: var(--accent-color);
+  padding: 20px;
+  gap: 20px;
+  border-radius: 15px;
+  display: grid;
+  box-shadow: var(--secondary-accent-color) -0.5vh -0.5vh 0.5vh;
+}
+
+#cards .grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+}
+
+#cards * {
+  background-color: var(--accent-color);
+  width: 100%;
+}
 .grid section {
-  flex: 0 0 calc(33.33% - 20px); /* Adjust the width of each item, considering the gap */
   text-align: center;
-  padding: 15px;
   border: 1px solid var(--secondary-color);
   border-radius: 5px;
-  background-color: var(--accent-color);
+  background-color: var(--primary-color);
   transition: transform 0.3s ease;
   margin-bottom: 15px;
-  display: flex;
+}
+
+.grid img {
+  height: 50%;
 }
 
 .grid section:hover {
   transform: translateY(-5px); /* Add a slight lift on hover */
 }
 
-.grid img {
-  width: 20;
-  height: auto;
-  border-radius: 5px;
-}
-
-.grid h3 {
-  font-family: "Caveat", cursive;
-  margin-bottom: 5px;
+.grid h4 {
+  margin-bottom: 15px;
   color: var(--primary-color);
 }
 
 .list {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  grid-template-columns: 1fr;
 }
 
 .list section {
@@ -274,6 +281,7 @@ footer {
   border-radius: 5px;
   margin-bottom: 10px;
   transition: transform 0.3s ease;
+  width: 100%;
 }
 
 .list section:hover {
@@ -286,45 +294,4 @@ footer {
   object-fit: cover;
   border-radius: 50%;
   margin-right: 15px;
-}
-
-.list h3 {
-  font-size: 1.1rem;
-  margin: 0;
-  color: var(--primary-color);
-}
-
-.list p {
-  margin: 0;
-  color: var(--secondary-text-color);
-}
-
-.list section:nth-child(even) {
-  background-color: var(--secondary-accent-color);
-}
-
-
-section h3 {
-	font-size: 1.5rem;
-}
-
-section p {
-	font-weight: 600;
-	font-size: smaller;
-}
-
-section a {
-	font-family: "Roboto", Arial, sans-serif;
-	font-size: 0.85rem;
-	color: navy;
-	letter-spacing: 1.1pt;
-}
-
-img {
-	height: 75px;
-	max-width: 100%;
-}
-
-#cards * {
-  background-color: var(--secondary-accent-color);
 }

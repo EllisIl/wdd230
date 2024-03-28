@@ -11,7 +11,8 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
-const weatherLink = "https://api.openweathermap.org/data/2.5/weather?lon=77.31&appid=ae15d82d0f9a8a3a6ddde1bf9172ddc0&lat=38.55&units=imperial"
+// const weatherLink = "https://api.openweathermap.org/data/2.5/weather?lon=77.31&appid=ae15d82d0f9a8a3a6ddde1bf9172ddc0&lat=38.55&units=imperial"
+// const forecastLink = "https://api.openweathermap.org/data/2.5/forecast?lon=77.31&appid=ae15d82d0f9a8a3a6ddde1bf9172ddc0&lat=38.55&units=imperial"
 
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
@@ -45,28 +46,28 @@ displayWeather();
 /* Directory Page */
 const memberLink = "data/members.json"
 const cards = document.querySelector('#cards')
+
 async function displayMembers() {
     const data = await apiFetch(memberLink);
-    const members = data.members
-    console.log(members)
+    const members = data.members;
 
     members.forEach((member) => {
         let card = document.createElement('section');
         let name = document.createElement('h2');
         let image = document.createElement('img');
-        let address = document.createElement('h3');
-        let phone = document.createElement('h3');
-
-        let hours = document.createElement('h3');
+        let address = document.createElement('h4');
+        let phone = document.createElement('h4');
+        let hours = document.createElement('div'); // Changed to div to hold multiple h4 elements
 
         name.textContent = member.name;
-
         address.textContent = member.address;
         phone.textContent = member.phone;
-        member.hours.forEach((times) => {
-            hours.textContent += times;
-        })
-        hours.textContent = member.hours;
+
+        member.hours.forEach((time) => {
+            let timeElement = document.createElement('h5');
+            timeElement.textContent = time;
+            hours.appendChild(timeElement);
+        });
 
         image.setAttribute('src', member.image);
         image.setAttribute('alt', member.name);
@@ -81,8 +82,11 @@ async function displayMembers() {
         card.appendChild(hours);
 
         cards.appendChild(card);
-    })
+    });
 }
+
+displayMembers();
+
 displayMembers();
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
