@@ -35,6 +35,20 @@
       ]
     },
     {
+      "name": "East Gate Asian Bistro",
+      "address": "25401 Eastern Marketplace Plz, Ste 130, Chantilly, VA 20152",
+      "phone": "(703) 327-8338",
+      "email": "info@lazydogrestaurant.com",
+      "url": "https://eastgateasianva.com/",
+      "image": "images/eastgate.webp",
+      "level": "Silver",
+      "hours": [
+        "Mon-Thu: 11:00am - 10:00pm",
+        "Fri-Sat: 11:00am - 10:30pm",
+        "Sun: 11:00am - 10:00pm"
+      ]
+    },
+    {
       "name": "Kabob Nook",
       "address": "24651 Southpoint Dr, Chantilly, VA 20152",
       "phone": "(703) 584-7575",
@@ -63,16 +77,6 @@
       "image": "images/lazydog.webp",
       "level": "Bronze",
       "hours": ["Mon-Fri: 11:00am - 12:00am", "Sat-Sun: 10:00am - 12:00am"]
-    },
-    {
-      "name": "East Gate Asian Bistro",
-      "address": "25401 Eastern Marketplace Plz, Ste 130, Chantilly, VA 20152",
-      "phone": "(703) 327-8338",
-      "email": "info@lazydogrestaurant.com",
-      "url": "https://eastgateasianva.com/",
-      "image": "images/eastgate.webp",
-      "level": "Bronze",
-      "hours": ["Mon-Thu: 11:00am - 10:00pm", "Fri-Sat: 11:00am - 10:30pm", "Sun: 11:00am - 10:00pm"]
     }
   ]
 }

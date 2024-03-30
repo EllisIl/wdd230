@@ -32,7 +32,12 @@
         <a href="directory.html">Directory</a>
         <a href="join.html">Join</a>
     </nav>
+    <div id="meet-and-greet-banner" class="banner">
+        <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+        <button id="close-banner-btn">Close</button>
+    </div>
     <main class="home">
+          
         <div class="cta-section card">
             <h2>Join Our Chamber of Commerce Today!</h2>
             <p>Discover the benefits of membership and connect with a thriving business community.</p>
@@ -44,15 +49,20 @@
         </section>
         <section class="card">
             <h2>Weather Forecast</h2>
-            <p>The current temperature in South Riding, Virginia is <span id="current-temp"></span></p>
-            <figure>
-                <img src="" alt="" id="weather-icon">
-                <figcaption></figcaption>
-            </figure>
+            <div class="weather">
+                <div id="temp">
+                    <p>The current temperature in South Riding, Virginia is <p id="current-temp"></p></p>
+                    <figure>
+                        <img src="" alt="" id="weather-icon">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                <div id="forecast"></div>
+            </div>
         </section>
         <section class="card">
             <h2>Spotlight Advertisements</h2>
-            <p>Placeholder for spotlight advertisements section.</p>
+            <div id="spotlight"></div>
         </section>
     </main>
     <footer>
