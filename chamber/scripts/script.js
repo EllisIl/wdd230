@@ -51,20 +51,20 @@ document.addEventListener("DOMContentLoaded", function() {
   const banner = document.getElementById("meet-and-greet-banner");
   const closeButton = document.getElementById("close-banner-btn");
 
-  const currentDate = new Date();
-  const currentDay = currentDate.getDay();
+  if (banner) {
+    const currentDate = new Date();
+    const currentDay = currentDate.getDay();
+    
+    if (currentDay >= 0 && currentDay < 4) {
+      banner.style.display = "block";
+      console.log("valid");
+      console.log(currentDay);
+    }
   
-  // Check if it's Monday, Tuesday, or Wednesday
-  if (currentDay >= 0 && currentDay < 4) {
-    banner.style.display = "block"; // Display the banner
-    console.log("valid");
-    console.log(currentDay);
+    closeButton.addEventListener("click", function() {
+      banner.style.display = "none";
+    });
   }
-
-  // Close the banner when the close button is clicked
-  closeButton.addEventListener("click", function() {
-    banner.style.display = "none";
-  });
 });
 
 /* Weather on Home Page */
