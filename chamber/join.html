@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>South Riding Chamber of Commerce</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <meta property="og:title" content="South Riding Chamber of Commerce" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="favicon" />
-    <meta property="og:url" content="https://ellisil.github.io/wdd230" />
-    <meta name="author" content="Elijah Foard" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="South Riding Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="favicon">
+    <meta property="og:url" content="https://ellisil.github.io/wdd230">
+    <meta name="author" content="Elijah Foard">
     <meta
       name="description"
       content="The South Riding Chamber of Commerce website!"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
       rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/larger.css" />
+   >
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
   </head>
   <body>
     <header>South Riding Chamber of Commerce</header>
     <div id="hero">
-      <img src="images/hero.jpg" alt="hero image" />
+      <img src="images/hero.jpg" alt="commerce hero image">
     </div>
     <nav>
       <a href="index.html">Home</a>
@@ -80,96 +80,96 @@
         <!-- first name -->
         <div class="field">
           <label for="fname">
-            First Name:<br />
-            <input type="text" id="fname" required /><br /><br />
+            First Name:<br>
+            <input type="text" id="fname" required><br><br>
           </label>
         </div>
 
         <!-- last name  -->
         <div class="field">
           <label for="lname">
-            Last Name:<br />
-            <input type="text" id="lname" required /><br /><br />
+            Last Name:<br>
+            <input type="text" id="lname" required><br><br>
           </label>
         </div>
 
         <!-- title or position -->
         <div class="field">
           <label for="position"
-            >Position: <br />
+           >Position: <br>
             <input
               type="text"
               id="position"
               pattern="[A-Za-z -]{7,}"
               title="Please enter at least seven characters consisting of alphabets, hyphens, and spaces only."
               required
-            /><br /><br />
+           ><br><br>
           </label>
         </div>
 
         <!-- email address -->
         <div class="field">
           <label for="email"
-            >Email Address: <br />
-            <input type="email" id="email" required /><br /><br />
+           >Email Address: <br>
+            <input type="email" id="email" required><br><br>
           </label>
         </div>
 
         <!-- phone number -->
         <div class="field">
           <label for="phone"
-            >Phone Number: <br />
+           >Phone Number: <br>
             <input
               type="tel"
               id="phone"
               pattern="[0-9]{10}"
               title="Please enter a 10-digit phone number"
               required
-            /><br /><br />
+           ><br><br>
           </label>
         </div>
 
         <!-- business/organization name -->
         <div class="field">
           <label for="organization"
-            >Business/Organization Name: <br />
-            <input type="text" id="organization" required /><br /><br />
+           >Business/Organization Name: <br>
+            <input type="text" id="organization" required><br><br>
           </label>
         </div>
 
         <!-- membership level (Non-Profit, Bronze, Silver, Gold) -->
         <div class="field">
           <label for="membership"
-            >Membership Level: <br />
+           >Membership Level: <br>
             <select id="membership" required>
               <option value="">Select Membership Level</option>
               <option value="Non-Profit">Non-Profit</option>
               <option value="Bronze">Bronze</option>
               <option value="Silver">Silver</option>
               <option value="Gold">Gold</option></select
-            ><br /><br />
+           ><br><br>
           </label>
         </div>
 
         <!-- business description -->
         <div class="field">
-          <label for="description">Business Description: <br /> </label><br />
+          <label for="description">Business Description: <br> </label><br>
           <textarea id="description" rows="4" cols="50" required></textarea
-          ><br /><br />
+         ><br><br>
         </div>
 
         <!-- timestamp -->
-        <input type="hidden" id="timestamp" value="" />
+        <input type="hidden" id="timestamp" value="">
 
         <!-- submission button -->
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit">
       </form>
     </main>
     <footer>
       <span
-        >Elijah Foard | WDD 230 Project | Last Modified:
+       >Elijah Foard | WDD 230 Project | Last Modified:
         <span id="lastModified"></span
-      ></span>
+     ></span>
     </footer>
     <script src="scripts/script.js"></script>
   </body>

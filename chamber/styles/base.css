@@ -306,7 +306,7 @@ footer {
   transform: translateY(-5px); /* Add a slight lift on hover */
 }
 
-.grid h3 {
+.grid h2 {
   color: var(--primary-color);
 }
 

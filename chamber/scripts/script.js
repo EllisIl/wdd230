@@ -191,10 +191,10 @@ async function displayMembers() {
     let card = document.createElement("section");
     let name = document.createElement("a");
     let image = document.createElement("img");
-    let address = document.createElement("h3");
-    let phone = document.createElement("h3");
+    let address = document.createElement("h2");
+    let phone = document.createElement("h2");
     let hours = document.createElement("div");
-    let level = document.createElement("h4");
+    let level = document.createElement("h3");
 
     name.textContent = member.name;
     name.href = member.url;
