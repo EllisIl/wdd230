@@ -17,10 +17,11 @@ body {
   width: 100%;
 }
 
-header {
+h1 {
   background-color: var(--primary-color);
   color: var(--text-color-on-dark);
   padding: 1em;
+  margin: 0 auto;
   text-align: center;
   position: sticky;
   top: 0;
