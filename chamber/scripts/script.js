@@ -70,8 +70,8 @@ document.addEventListener("DOMContentLoaded", function() {
 /* Weather on Home Page */
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
-const weatherLink = "https://api.openweathermap.org/data/2.5/weather?lon=77.31&appid=ae15d82d0f9a8a3a6ddde1bf9172ddc0&lat=38.55&units=imperial";
-const forecastLink = "https://api.openweathermap.org/data/2.5/forecast?lon=77.31&appid=ae15d82d0f9a8a3a6ddde1bf9172ddc0&lat=38.55&units=imperial";
+// const weatherLink = "https://api.openweathermap.org/data/2.5/weather?lon=77.31&appid=ae15d82d0f9a8a3a6ddde1bf9172ddc0&lat=38.55&units=imperial";
+// const forecastLink = "https://api.openweathermap.org/data/2.5/forecast?lon=77.31&appid=ae15d82d0f9a8a3a6ddde1bf9172ddc0&lat=38.55&units=imperial";
 async function displayWeather() {
   const data = await apiFetch(weatherLink);
   currentTemp.innerHTML = `${data.main.temp}&deg;F and the weather is ${data.weather[0].description}`;
@@ -224,7 +224,6 @@ async function displayMembers() {
     image.setAttribute("alt", member.name);
     image.setAttribute("loading", "lazy");
     image.setAttribute("width", "100px");
-    image.setAttribute("height", "440px");
 
     card.appendChild(name);
     card.appendChild(address);

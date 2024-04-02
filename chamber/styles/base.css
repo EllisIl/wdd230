@@ -1,12 +1,12 @@
 :root {
-  --primary-color: #3B413C; 
-  --background-color: #FFF;
-  --secondary-color: #9DB5B2; 
-  --text-color-on-light: #1D201E;
+  --primary-color: #3b413c;
+  --background-color: #fff;
+  --secondary-color: #9db5b2;
+  --text-color-on-light: #1d201e;
   --text-color-on-dark: #fff;
-  --secondary-text-color: #330000; 
-  --accent-color: #DAF0EE; 
-  --secondary-accent-color: #94D1BE; 
+  --secondary-text-color: #330000;
+  --accent-color: #daf0ee;
+  --secondary-accent-color: #94d1be;
 }
 
 body {
@@ -45,16 +45,25 @@ nav a {
   transition: background-color 0.3s ease; /* Create a transition for a more seamless user interaction */
 }
 #hero img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 nav a:hover {
-    background-color: var(--accent-color); /* Darken the background on hover */
+  background-color: var(--accent-color); /* Darken the background on hover */
 }
 main {
-    display: grid;
-    gap: 20px;
-    padding: 2vh;
+  display: grid;
+  gap: 20px;
+  padding: 2vh;
+}
+footer {
+  background-color: var(--secondary-color);
+  color: var(--text-color-on-light);
+  text-align: center;
+  padding: 1em 0;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
 }
 .banner {
   display: none;
@@ -78,43 +87,52 @@ main {
 }
 
 .card {
-    background-color: #f2f2f2;
-    padding: 10px;
-    border: 2px solid var(--secondary-color);
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 2px solid var(--secondary-color);
 }
 .cta-section {
-    background-color: var(--accent-color);
-    padding: 20px;
-    text-align: center;
-    color: var(--text-color-on-light); /* Text color for better contrast */
+  background-color: var(--accent-color);
+  padding: 20px;
+  text-align: center;
+  color: var(--text-color-on-light); /* Text color for better contrast */
 }
 .cta-button {
-    display: inline-block;
-    padding: 1vh 2vh;
-    background-color: var(--secondary-accent-color);
-    text-decoration: none;
-    border-radius: 5px;
-    color: var(--secondary-text-color);
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  padding: 1vh 2vh;
+  background-color: var(--secondary-accent-color);
+  text-decoration: none;
+  border-radius: 5px;
+  color: var(--secondary-text-color);
+  transition: background-color 0.3s ease;
 }
 .cta-button:hover {
-    background-color: var(--secondary-color); /* Darken the button color on hover */
+  background-color: var(
+    --secondary-color
+  ); /* Darken the button color on hover */
 }
 .weather {
   width: 100%;
   text-align: center;
 }
-
+#temp {
+  background-color: var(--accent-color);
+  padding: 5px;
+}
+#forecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 .main-content {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    grid-template-columns: 1fr 1fr; /* Create two columns */
-    gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  grid-template-columns: 1fr 1fr; /* Create two columns */
+  gap: 20px;
 }
 .main-content img {
-    width: 80%;
+  width: 80%;
   height: auto;
   box-shadow: -1vh 1vh 3px var(--secondary-accent-color);
 }
@@ -127,19 +145,19 @@ main {
   border: 2px solid var(--secondary-color);
 }
 .stats {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-    padding: 20px;
-    border: 2px solid var(--secondary-color);
-    box-shadow: -1vh 1vh 3px var(--secondary-accent-color);
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  padding: 20px;
+  border: 2px solid var(--secondary-color);
+  box-shadow: -1vh 1vh 3px var(--secondary-accent-color);
 }
 .right-content {
-    grid-column: 2 / 3;
-    width: 100%;
-    border: 2px solid var(--secondary-color);
+  grid-column: 2 / 3;
+  width: 100%;
+  border: 2px solid var(--secondary-color);
 }
 .restaurant {
-    padding: 10px;
+  padding: 10px;
 }
 .restaurant figure {
   position: relative;
@@ -185,9 +203,9 @@ main {
   margin-bottom: 5px;
 }
 .join form {
-    background-color: var(--secondary-accent-color);
-    padding: 3vh;
-    border-radius: 15px;
+  background-color: var(--secondary-accent-color);
+  padding: 3vh;
+  border-radius: 15px;
 }
 .join input[type="text"],
 .join input[type="email"],
@@ -219,19 +237,10 @@ main {
   border-radius: 15px;
 }
 .join .field {
-    background-color: var(--accent-color);
-    padding: 1vh;
-    margin-bottom: 1vh;
-    border-radius: 1.5vh;
-}
-footer {
-  background-color: var(--secondary-color);
-  color: var(--text-color-on-light);
-  text-align: center;
-  padding: 1em 0;
-  position: sticky;
-  bottom: 0;
-  width: 100%;
+  background-color: var(--accent-color);
+  padding: 1vh;
+  margin-bottom: 1vh;
+  border-radius: 1.5vh;
 }
 .hidden {
   opacity: 0;
@@ -245,7 +254,7 @@ footer {
 }
 
 .directory {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   justify-content: center; /* Center items horizontally */
   gap: 20px; /* Adjust the space between items */
@@ -255,6 +264,12 @@ footer {
   display: block;
 }
 
+#forecast #day {
+  margin: 5px;
+  padding: 5px;
+  background-color: var(--accent-color);
+  border: 1px solid var(--primary-color);
+}
 #cards {
   background-color: var(--accent-color);
   padding: 20px;
@@ -263,14 +278,17 @@ footer {
   display: grid;
   box-shadow: var(--secondary-accent-color) -0.5vh -0.5vh 0.5vh;
 }
-
-#cards .grid {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+#cards a {
+  font-size: 50px;
 }
-
 #cards * {
   background-color: var(--accent-color);
   width: 100%;
+  text-align: center;
+}
+.grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: grid;
 }
 .grid div {
   margin-bottom: 0;
@@ -283,23 +301,6 @@ footer {
   background-color: var(--primary-color);
   transition: transform 0.3s ease;
   padding: 10px;
-}
-
-#temp {
-  background-color: var(--accent-color);
-  padding: 5px;
-}
-
-#forecast {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-#forecast #day {
-  margin: 5px;
-  padding: 5px;
-  background-color: var(--accent-color);
-  border: 1px solid var(--primary-color);
 }
 
 .grid section:hover {
@@ -323,13 +324,11 @@ footer {
   border-radius: 5px;
   margin-bottom: 10px;
   transition: transform 0.3s ease;
-  width: 100%;
+  width: 90%;
 }
-
 .list section:hover {
   transform: translateX(5px); /* Add a slight shift on hover */
 }
-
 .list img {
   width: 75px;
   height: 75px;

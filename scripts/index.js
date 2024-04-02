@@ -18,12 +18,9 @@ hamButton.addEventListener('click', () => {
 const modeButton = document.querySelector(".switch input");
 const body = document.body;
 
-function toggleColor() {
+modeButton.addEventListener("click", () => {
     body.classList.toggle("dark-mode");
-}
-
-modeButton.addEventListener("click", toggleColor);
-
+});
 
 document.addEventListener('DOMContentLoaded', function () {
     // Page visit counter
@@ -104,4 +101,3 @@ function displayResults(data) {
 }
 
 apiFetch();
-
